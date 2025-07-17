@@ -160,9 +160,6 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-.benefits__item > :nth-child(3) .benefits__text {
-  width: 10px;
-}
 .benefits__number {
   color: #FF6B09;
   font-size: 14px;
@@ -176,7 +173,10 @@ body {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 1.12px;
-  width: 100%;
+}
+
+.benefits__list > :nth-child(3) .benefits__item__text {
+  width: 10px;
 }
 
 .registration {
