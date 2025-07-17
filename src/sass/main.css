@@ -51,11 +51,48 @@ body {
 .program {
   padding-top: 50px;
   background-color: #111518;
+  position: relative;
 }
-.program__box {
-  width: 176px;
-  margin-left: auto;
-  margin-right: auto;
+.program__list > :not(:first-child) {
+  margin-top: 40px;
+}
+.program__list > :nth-child(2) {
+  margin-top: 54px;
+}
+.program__list > :nth-child(3) {
+  margin-top: 93px;
+}
+.program__list > :nth-child(4) {
+  margin-top: 70px;
+}
+.program__list > :nth-child(5) {
+  margin-top: 80px;
+}
+.program__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.program__boxx {
+  position: relative;
+}
+.program__sublist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.program__svg {
+  height: 1292px;
+  width: 15px;
+  position: absolute;
+  top: 7px;
+  left: 50px;
+}
+.program__image {
+  width: 120px;
+  position: absolute;
+  top: 1450px;
+  right: 0;
 }
 .program__title {
   color: #FFF;
@@ -73,18 +110,31 @@ body {
   line-height: 28px;
   letter-spacing: 1.12px;
   text-transform: uppercase;
-  margin-bottom: 20px;
   text-align: center;
 }
+.program__subtitle {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 136%; /* 27.2px */
+  letter-spacing: 0.6px;
+  width: 180px;
+  margin-top: 70px;
+}
 
+.lesson {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .lesson__title {
   color: #FF6B09;
   font-size: 12px;
   font-weight: 700;
   line-height: 164.9%;
   letter-spacing: 0.96px;
-  margin-bottom: 8px;
-  margin-left: 37px;
+  margin: 0;
+  margin-left: 85px;
 }
 .lesson__text {
   color: #3D3D3D;
@@ -92,7 +142,41 @@ body {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.96px;
-  margin-left: 36px;
+  margin-left: 85px;
+}
+
+.benefits {
+  padding: 35px 22px;
+  background-color: #FFF;
+  box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
+}
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.benefits__item > :nth-child(3) .benefits__text {
+  width: 10px;
+}
+.benefits__number {
+  color: #FF6B09;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 164.9%;
+  letter-spacing: 1.12px;
+}
+.benefits__text {
+  color: #111518;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.12px;
+  width: 100%;
 }
 
 .registration {
