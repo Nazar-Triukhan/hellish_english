@@ -15,15 +15,15 @@
     }
 
     > :nth-child(2) {
-      margin-top: 53px;
+      margin-top: 43px;
 
       @media screen and (min-width: 768px) {
-        margin-top: 0;
+        margin-top: 6px;
       }
     }
 
     > :nth-child(3) {
-      margin-top: 54px;
+      margin-top: 44px;
 
       @media screen and (min-width: 768px) {
         margin-top: 0;
@@ -31,15 +31,15 @@
     }
 
     > :nth-child(4) {
-      margin-top: 70px;
+      margin-top: 61px;
 
       @media screen and (min-width: 768px) {
-        margin-top: 0;
+        margin-top: 10px;
       }
     }
 
     > :nth-child(5) {
-      margin-top: 63px;
+      margin-top: 50px;
 
       @media screen and (min-width: 768px) {
         margin-top: 0;
@@ -68,7 +68,7 @@
     flex-direction: column;
     gap: 8px;
    > :not(:first-child){
-    margin-top: 30px;
+    margin-top: 10px;
    }
     // @media screen and (min-width: 768px) {
     //   gap: 30px;
@@ -100,9 +100,9 @@
     @media screen and (min-width: 768px) {
       height: 100%;
       display: block;
-      top: -50px;
+      top: -52px;
       left: 40px;
-      width: 21px;
+      width: 22px;
     }
   }
 
@@ -111,6 +111,11 @@
     position: absolute;
     top: 1450px;
     right: 0;
+    @media screen and (min-width: 768px){
+  top: 800px;
+  width: 374px;
+}
+
   }
 
   &__title {
@@ -178,7 +183,8 @@
     width: 176px;
 
     @media screen and (min-width: 768px) {
-      width: 150px;
+      width: 180px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -187,17 +193,28 @@
   padding: 35px 22px;
   background-color: $team-background-color;
   box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
+ @media screen and (min-width: 768px){
+  padding: 40px 98px
+}
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media screen and (min-width: 768px){
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media screen and (min-width: 768px){
+  width: 236px;
+}
   }
 
   &__number {
