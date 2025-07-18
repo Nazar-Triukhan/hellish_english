@@ -1,0 +1,10 @@
+.teacher {
+  padding-top: 308px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 295px;
+  }
+  @media screen and (min-width: 1336px) {
+    padding-top: 324px;
+  }
+}
