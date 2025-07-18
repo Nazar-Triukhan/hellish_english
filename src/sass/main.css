@@ -171,25 +171,71 @@ body {
   background-color: #111518;
   position: relative;
 }
+.program__list {
+  margin-left: 70px;
+}
 .program__list > :not(:first-child) {
   margin-top: 40px;
 }
+@media screen and (min-width: 768px) {
+  .program__list > :not(:first-child) {
+    margin-top: 0;
+  }
+}
 .program__list > :nth-child(2) {
-  margin-top: 54px;
+  margin-top: 53px;
+}
+@media screen and (min-width: 768px) {
+  .program__list > :nth-child(2) {
+    margin-top: 0;
+  }
 }
 .program__list > :nth-child(3) {
-  margin-top: 93px;
+  margin-top: 54px;
+}
+@media screen and (min-width: 768px) {
+  .program__list > :nth-child(3) {
+    margin-top: 0;
+  }
 }
 .program__list > :nth-child(4) {
   margin-top: 70px;
 }
+@media screen and (min-width: 768px) {
+  .program__list > :nth-child(4) {
+    margin-top: 0;
+  }
+}
 .program__list > :nth-child(5) {
-  margin-top: 80px;
+  margin-top: 63px;
+}
+@media screen and (min-width: 768px) {
+  .program__list > :nth-child(5) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .program__svg-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) {
+  .program__svg-tablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .program__svg-tablet {
+    display: block;
+  }
 }
 .program__item {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.program__item > :not(:first-child) {
+  margin-top: 30px;
 }
 .program__boxx {
   position: relative;
@@ -199,12 +245,27 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (min-width: 768px) {
+  .program__sublist {
+    gap: 50px;
+    flex-direction: row;
+  }
+}
 .program__svg {
   height: 1292px;
   width: 15px;
   position: absolute;
   top: 7px;
-  left: 50px;
+  left: 45px;
+}
+@media screen and (min-width: 768px) {
+  .program__svg {
+    height: 100%;
+    display: block;
+    top: -50px;
+    left: 40px;
+    width: 21px;
+  }
 }
 .program__image {
   width: 120px;
@@ -219,7 +280,12 @@ body {
   font-weight: 800;
   line-height: 130%;
   letter-spacing: 0.6px;
-  margin-bottom: 30px;
+  margin-bottom: 52px;
+}
+@media screen and (min-width: 768px) {
+  .program__title {
+    text-align: start;
+  }
 }
 .program__heading {
   color: #FFF;
@@ -228,7 +294,11 @@ body {
   line-height: 28px;
   letter-spacing: 1.12px;
   text-transform: uppercase;
-  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .program__heading {
+    text-align: start;
+  }
 }
 .program__subtitle {
   color: #FFF;
@@ -252,7 +322,6 @@ body {
   line-height: 164.9%;
   letter-spacing: 0.96px;
   margin: 0;
-  margin-left: 85px;
 }
 .lesson__text {
   color: #3D3D3D;
@@ -260,7 +329,12 @@ body {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.96px;
-  margin-left: 85px;
+  width: 176px;
+}
+@media screen and (min-width: 768px) {
+  .lesson__text {
+    width: 150px;
+  }
 }
 
 .benefits {
@@ -291,10 +365,6 @@ body {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 1.12px;
-}
-
-.benefits__list > :nth-child(3) .benefits__item__text {
-  width: 10px;
 }
 
 .registration {
