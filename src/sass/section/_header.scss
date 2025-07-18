@@ -79,6 +79,8 @@
     &__button{
         border: none;
         background-color: transparent;
+        width: 27px;
+        height: 19px;
 
         @media screen and (min-width: 1336px) {
         display: none;
@@ -86,9 +88,10 @@
     }
 
     &__menu{
-        width: 21px;
-        height: 12px;
+        width: 27px;
+        height: 18px;
         fill: #000000;
+        
 
         @media screen and (min-width: 1336px) {
         display: none;
