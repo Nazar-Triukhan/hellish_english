@@ -308,7 +308,19 @@ body {
 
 .program {
   padding-top: 50px;
+  padding-bottom: 430px;
   background-color: #111518;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .program {
+    padding-bottom: 168px;
+  }
+}
+.program__boxxx {
+  position: relative;
+}
+.program .program .container {
   position: relative;
 }
 .program__list {
@@ -415,8 +427,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .program__image {
-    top: 800px;
+    top: 730px;
     width: 374px;
+    left: auto;
   }
 }
 .program__title {
@@ -455,6 +468,12 @@ body {
   width: 180px;
   margin-top: 70px;
 }
+@media screen and (min-width: 768px) {
+  .program__subtitle {
+    width: 688px;
+    text-align: center;
+  }
+}
 
 .lesson {
   display: flex;
@@ -485,13 +504,19 @@ body {
 }
 
 .benefits {
+  position: absolute;
+  bottom: -250px;
+  width: 280px;
   padding: 35px 22px;
   background-color: #FFF;
   box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
 }
 @media screen and (min-width: 768px) {
   .benefits {
-    padding: 40px 98px;
+    padding: 40px 80px;
+    width: 718px;
+    left: auto;
+    right: auto;
   }
 }
 .benefits__list {
@@ -513,6 +538,7 @@ body {
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: 236px;
+    gap: 20px;
   }
 }
 .benefits__number {
