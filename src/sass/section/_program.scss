@@ -4,20 +4,62 @@
   position: relative;
 
   &__list {
+    margin-left: 70px;
+
     > :not(:first-child) {
       margin-top: 40px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
     }
+
     > :nth-child(2) {
-      margin-top: 54px;
+      margin-top: 53px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
     }
+
     > :nth-child(3) {
-      margin-top: 93px;
+      margin-top: 54px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
     }
+
     > :nth-child(4) {
       margin-top: 70px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
     }
+
     > :nth-child(5) {
-      margin-top: 80px;
+      margin-top: 63px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__svg-mobile {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__svg-tablet {
+    @media screen and (min-width: 320px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
     }
   }
 
@@ -25,6 +67,12 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+   > :not(:first-child){
+    margin-top: 30px;
+   }
+    // @media screen and (min-width: 768px) {
+    //   gap: 30px;
+    // }
   }
 
   &__boxx {
@@ -35,6 +83,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @media screen and (min-width: 768px) {
+      gap: 50px;
+      flex-direction: row;
+    }
   }
 
   &__svg {
@@ -42,7 +95,15 @@
     width: 15px;
     position: absolute;
     top: 7px;
-    left: 50px;
+    left: 45px;
+
+    @media screen and (min-width: 768px) {
+      height: 100%;
+      display: block;
+      top: -50px;
+      left: 40px;
+      width: 21px;
+    }
   }
 
   &__image {
@@ -59,7 +120,11 @@
     font-weight: 800;
     line-height: 130%;
     letter-spacing: 0.6px;
-    margin-bottom: 30px;
+    margin-bottom: 52px;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
   }
 
   &__heading {
@@ -69,7 +134,11 @@
     line-height: 28px;
     letter-spacing: 1.12px;
     text-transform: uppercase;
-    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+      // margin-top: 30px;
+    }
   }
 
   &__subtitle {
@@ -95,7 +164,9 @@
     line-height: 164.9%;
     letter-spacing: 0.96px;
     margin: 0;
-    margin-left: 85px;
+
+    @media screen and (min-width: 768px) {
+    }
   }
 
   &__text {
@@ -104,7 +175,11 @@
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0.96px;
-    margin-left: 85px;
+    width: 176px;
+
+    @media screen and (min-width: 768px) {
+      width: 150px;
+    }
   }
 }
 
@@ -139,10 +214,5 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 1.12px;
-    // width: 100%;
   }
-}
-
-.benefits__list > :nth-child(3) .benefits__item__text {
-  width: 10px;
 }
