@@ -1,11 +1,14 @@
 <section class="program">
-  <div class="container">
+
+  <div class="container program__a">
+          <svg class="program__svg">
+        <use class="program__svg-destop" href="./img/destop/destop-linr.svg"></use>
+      </svg>
     <h2 class="program__title">Our program</h2>
     <div class="program__boxx">
       <svg class="program__svg">
-        <use class="program__svg-mobile" href="../img/mobail/mobile-line.svg"></use>
+        <use class="program__svg-mobile" href="./img/mobail/mobile-line.svg"></use>
         <use class="program__svg-tablet" href="/img/symbol-defs.svg#icon-decoration"></use>
-        <use class="program__svg-destop" href=""></use>
       </svg>
 
       <ul class="program__list program__box">
@@ -43,7 +46,6 @@
             </li>
           </ul>
         </li>
-
         <li class="program__item">
           <h3 class="program__heading">3 semester</h3>
           <ul class="program__sublist">
@@ -111,10 +113,10 @@
     <picture>
       <source
         srcset="
-          ./img/mobail/women-mobail@1x.webp 1x,
-          ./image/destop/igor-desktop@2x.webp 2x
+          ./img/destop/women-destop@1x.webp 1x,
+          ./img/destop/women-destop@2x.webp 2x
         "
-        media="(min-width: 1200px)"
+        media="(min-width: 1336px)"
       />
       <source
         srcset="
@@ -125,20 +127,21 @@
       />
       <source
         set="
-         /src/img/tablet/women-tablet@1x.webp
-
+         /img/mobail/women-mobail@1x.webp 1x,
+         /img/mobail/women-mobail@2x.webp 2x,
         "
         media="(max-width: 767px)"
       />
       <img
-        src="/img/tablet/women-tablet@1x.webp"
-        alt=""
+        src="/img/mobail/women-mobail@1x.webp"
+        alt="women"
         class="program__image"
       />
     </picture>
     <h2 class="program__subtitle">Why do people choose us</h2>
-
-    <div class="benefits">
+  </div>
+</section>
+ <div class="benefits">
       <ul class="benefits__list">
         <li class="benefits__item">
           <h3 class="benefits__number">— 01</h3>
@@ -169,6 +172,4 @@
           <p class="benefits__text">Set of groups by level of knowledge</p>
         </li>
       </ul>
-    </div>
-  </div>
-</section>
+ </div>

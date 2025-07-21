@@ -1,22 +1,25 @@
 .program {
   padding-top: 50px;
   padding-bottom: 430px;
+  overflow: hidden;
   background-color: $primary-color;
   position: relative;
-@media screen and (min-width: 768px){
-  padding-bottom: 168px;
-}
-  &__boxxx{
+  @media screen and (min-width: 768px) {
+    padding-bottom: 168px;
+  }
+    @media screen and (min-width: 1336px){
+   padding-bottom: 326px;
+  }
+  
+
+  &__a{
+      @media screen and (min-width: 1336px){
     position: relative;
   }
-
-.program .container {
-  position: relative;
-}
+  }
 
   &__list {
     margin-left: 70px;
-
     > :not(:first-child) {
       margin-top: 40px;
 
@@ -31,6 +34,9 @@
       @media screen and (min-width: 768px) {
         margin-top: 6px;
       }
+        @media screen and (min-width: 1336px){
+    margin-top: 0;
+  }
     }
 
     > :nth-child(3) {
@@ -47,6 +53,9 @@
       @media screen and (min-width: 768px) {
         margin-top: 10px;
       }
+              @media screen and (min-width: 1336px){
+    margin-top: 0;
+  }
     }
 
     > :nth-child(5) {
@@ -56,6 +65,11 @@
         margin-top: 0;
       }
     }
+      @media screen and (min-width: 1336px){
+    display: flex;
+    margin-left: 0;
+    gap: 46px;
+  }
   }
 
   &__svg-mobile {
@@ -72,22 +86,41 @@
     @media screen and (min-width: 768px) {
       display: block;
     }
+
+      @media screen and (min-width: 1336px){
+    display: none;
+  }
   }
 
-  &__item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-   > :not(:first-child){
-    margin-top: 10px;
-   }
-    // @media screen and (min-width: 768px) {
-    //   gap: 30px;
-    // }
+  &__svg-destop{
+    display: none;
+      @media screen and (min-width: 1336px){
+    display: block;
   }
+  }
+
+&__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  > :not(:first-child) {
+    margin-top: 10px;
+      @media screen and (min-width: 1336px) {
+    margin-top: 0;
+  }
+  }
+
+}
+
 
   &__boxx {
     position: relative;
+      @media screen and (min-width: 1336px){
+
+    padding: 0;
+    margin: 0;
+  }
   }
 
   &__sublist {
@@ -99,6 +132,10 @@
       gap: 50px;
       flex-direction: row;
     }
+      @media screen and (min-width: 1336px){
+    flex-direction: column;
+    gap: 25px;
+  }
   }
 
   &__svg {
@@ -115,6 +152,14 @@
       left: 40px;
       width: 22px;
     }
+
+      @media screen and (min-width: 1336px){
+    width: 1680px;
+    height: 16px;
+    position: absolute;
+    top: 120px;
+    left: -160px;
+  }
   }
 
   &__image {
@@ -122,12 +167,16 @@
     position: absolute;
     top: 1450px;
     right: 0;
-    @media screen and (min-width: 768px){
-  top: 730px;
-  width: 374px;
-  left: auto;
-}
-
+    @media screen and (min-width: 768px) {
+      top: 730px;
+      width: 374px;
+      left: auto;
+    }
+      @media screen and (min-width: 1336px){
+    left: -85px;
+    top: 492px;
+    width: 500px;
+  }
   }
 
   &__title {
@@ -142,6 +191,11 @@
     @media screen and (min-width: 768px) {
       text-align: start;
     }
+
+      @media screen and (min-width: 1336px){
+    font-size: 46px;
+    margin-bottom: 106px;
+  }
   }
 
   &__heading {
@@ -166,16 +220,15 @@
     letter-spacing: 0.6px;
     width: 180px;
     margin-top: 70px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       width: 688px;
       text-align: center;
-}
-
-
-
+    }
+      @media screen and (min-width: 1336px){
+    display: none;
+  }
   }
 }
-
 .lesson {
   display: flex;
   flex-direction: column;
@@ -205,43 +258,59 @@
       width: 180px;
       margin-bottom: 20px;
     }
+     @media screen and (min-width: 1336px){
+    width: 226px;
+    margin-bottom: 0;
+  }
   }
 }
 
 .benefits {
   position: absolute;
-  bottom: -250px;
-  width: 280px; 
+  bottom: -3590px;
+  width: 280px;
+    left: 50%;
+  transform: translateX(-50%);
   padding: 35px 22px;
   background-color: $team-background-color;
   box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
-
- @media screen and (min-width: 768px){
-  padding: 40px 80px;
-  width: 718px;
-  left: auto;
-  right: auto;
-}
+  order: 6;
+  @media screen and (min-width: 768px) {
+    padding: 40px 80px;
+    width: 718px;
+    bottom: -1850px;
+  }
+  @media screen and (min-width: 1336px){
+width: 1314px;
+padding: 67px 113px;
+bottom: -1280px;
+  }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    @media screen and (min-width: 768px){
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+        @media screen and (min-width: 1336px){
+    justify-content: space-between;
+  }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    @media screen and (min-width: 768px){
-  width: 236px;
-  gap: 20px;
-}
+    @media screen and (min-width: 768px) {
+      width: 236px;
+      gap: 20px;
+    }
+      @media screen and (min-width: 1336px){
+    gap: 40px;
+    width: 336px;
+  }
   }
 
   &__number {
@@ -258,5 +327,8 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 1.12px;
+      @media screen and (min-width: 1336px){
+    width: 336px;
+  }
   }
 }
