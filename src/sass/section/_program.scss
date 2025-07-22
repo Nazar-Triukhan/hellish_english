@@ -267,7 +267,7 @@
 
 .benefits {
   position: absolute;
-  bottom: -3590px;
+  margin-top: -400px;
   width: 280px;
     left: 50%;
   transform: translateX(-50%);
@@ -278,12 +278,12 @@
   @media screen and (min-width: 768px) {
     padding: 40px 80px;
     width: 718px;
-    bottom: -1850px;
+    margin-top: -140px;
   }
   @media screen and (min-width: 1336px){
 width: 1314px;
 padding: 67px 113px;
-bottom: -1280px;
+margin-top: -190px;
   }
 
   &__list {

@@ -590,7 +590,7 @@ body {
 
 .benefits {
   position: absolute;
-  bottom: -3590px;
+  margin-top: -400px;
   width: 280px;
   left: 50%;
   transform: translateX(-50%);
@@ -603,14 +603,14 @@ body {
   .benefits {
     padding: 40px 80px;
     width: 718px;
-    bottom: -1850px;
+    margin-top: -140px;
   }
 }
 @media screen and (min-width: 1336px) {
   .benefits {
     width: 1314px;
     padding: 67px 113px;
-    bottom: -1280px;
+    margin-top: -190px;
   }
 }
 .benefits__list {
@@ -763,7 +763,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .registration {
     background: #111518 url("../img/mobail/backgraund-mobail@2x.webp");
     background-size: cover;
@@ -780,7 +780,7 @@ body {
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .registration {
     background: #111518 url("../img/tablet/background-tablet@2x.webp");
     background-size: cover;
@@ -797,7 +797,7 @@ body {
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 1336px) and (min-device-pixel-ratio: 2), screen and (min-width: 1336px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1336px) and (min-resolution: 192dpi), screen and (min-width: 1336px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1336px) and (min-device-pixel-ratio: 2), screen and (min-width: 1336px) and (min-resolution: 192dpi), screen and (min-width: 1336px) and (min-resolution: 2dppx) {
   .registration {
     background: #111518 url("/img/destop/backgraund-destop@2x.webp");
     background-size: cover;
