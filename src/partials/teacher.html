@@ -1,5 +1,76 @@
 <section class="teacher">
-    <div class="container">
-        <h2 class="teacher__title">Test</h2>
+  <div class="container">
+    <h2 class="teacher__heading">Teacher</h2>
+    <div class="teacher__flex">
+    <picture>
+      <source
+        srcset="
+          ./img/destop/teacher-destop@1x.webp 1x,
+          ./img/destop/teacher-destop@2x.webp 2x
+        "
+        media="(min-width: 1336px)"
+      />
+      <source
+        srcset="
+          ./img/tablet/teacher-tablet@1x.webp 1x,
+          ./img/tablet/teacher-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./img/mobail/teacher-mobail@1x.webp 1x,
+          ./img/mobail/teacher-mobail@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="teacher__img"
+        src="./img/destop/teacher-destop@1x.webp"
+        alt="teacher"
+      />
+    </picture>
+    <div class="teacher__box">
+      <h3 class="teacher__title">Elena Moreva</h3>
+      <ul class="teacher__list">
+        <li class="teacher__items">
+            <svg class="teacher__svg"><use href="../img/symbol-defs.svg#icon-Vector"></use></svg>
+          <p class="teacher__desc">
+            6 yeards of experience in preparing students for UPE
+          </p>
+        </li>
+        <li class="teacher__items">
+            <svg class="teacher__svg"><use href="../img/symbol-defs.svg#icon-Vector"></use></svg>
+          <p class="teacher__desc">
+            Own result of passing VNO - 197 points 2 years in a row
+          </p>
+        </li>
+        <li class="teacher__items">
+            <svg class="teacher__svg"><use href="../img/symbol-defs.svg#icon-Vector"></use></svg>            
+          <p class="teacher__desc">
+            Passed excellent at the international analogue of UPE - Cambridge
+            PET (Preliminary English Test)
+          </p>
+        </li>
+      </ul>
+      <h3 class="teacher__line">__</h3>
+      <p class="teacher__description">
+        Graduated from the Institute of International Relations of the NAU with
+        a degree in translator-analyst.
+      </p>
+      <p class="teacher__description">
+        In spare time takes courses from the best universities in the world on
+        effective teaching and essay writing techniques.
+      </p>
+      <p class="teacher__description">
+        Completed: English Grammar and Essay Writing (Berkeley), English Grammar
+        & Style (The University of Queesland), How to Write an Essay (Berkeley),
+        Academic and Business Writing (Berkeley), The Art of Teaching (GEMS
+        education), Powerful Tools for Teaching and Learning (University of
+        Houston).
+      </p>
+      <a class="teacher__link" href="">Cambrige English Entry Level Certificate</a>
+    </div>
+    </div>
     </div>
 </section>
