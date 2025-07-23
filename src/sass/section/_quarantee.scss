@@ -1,11 +1,5 @@
 .guarantee{
 
-  background-color: $special-background;
-
-  @media screen and (min-width: 768px){
-    background-color: $team-background-color;
-}
-
     &__title{
 color: $primary-color;
 text-align: center;
@@ -20,6 +14,10 @@ font-size: 46px;
 letter-spacing: 1.38px;
 margin-bottom: 50px;
   }
+    }
+
+    &__background{
+      background-color: $special-background;
     }
 
 &__list{
