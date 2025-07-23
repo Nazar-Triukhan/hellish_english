@@ -1181,14 +1181,6 @@ body {
   }
 }
 
-.guarantee {
-  background-color: #F1F1F1;
-}
-@media screen and (min-width: 768px) {
-  .guarantee {
-    background-color: #FFF;
-  }
-}
 .guarantee__title {
   color: #111518;
   text-align: center;
@@ -1204,6 +1196,9 @@ body {
     letter-spacing: 1.38px;
     margin-bottom: 50px;
   }
+}
+.guarantee__background {
+  background-color: #F1F1F1;
 }
 .guarantee__list {
   background-color: #F1F1F1;
