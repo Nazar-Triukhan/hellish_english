@@ -1,5 +1,11 @@
 .guarantee{
 
+  background-color: $special-background;
+
+  @media screen and (min-width: 768px){
+    background-color: $team-background-color;
+}
+
     &__title{
 color: $primary-color;
 text-align: center;
@@ -24,12 +30,12 @@ margin-bottom: 50px;
     gap: 25px;
 
     @media screen and (min-width: 768px){
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 30px 65px;
     gap: 20px;
 }
 
   @media screen and (min-width: 1336px){
-    padding: 50px 0px 45px 0px;
+    padding: 50px 0px 45px 112px;
   }
 }
 
