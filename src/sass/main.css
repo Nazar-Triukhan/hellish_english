@@ -1523,4 +1523,57 @@ body {
   width: 260px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer__ilogo {
+  margin-top: 24px;
+  width: 80px;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 23px;
+}
+.footer__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footer__phone {
+  margin-left: 10px;
+  width: 169px;
+  color: #111518;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.12px;
+}
+.footer__iphone {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: #FF6B09;
+}
+.footer__igramm {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__bottom {
+  width: 100%;
+  height: 68px;
+  background-color: #111518;
+  position: relative;
+  margin-top: 30px;
+}
+.footer__copyright {
+  color: #B9B9B9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px; /* 200% */
+  position: absolute;
+  top: 20px;
+  left: 68px;
 }/*# sourceMappingURL=main.css.map */
