@@ -1200,6 +1200,11 @@ body {
 .guarantee__background {
   background-color: #F1F1F1;
 }
+@media screen and (min-width: 768px) {
+  .guarantee__background {
+    background-color: #FFF;
+  }
+}
 .guarantee__list {
   background-color: #F1F1F1;
   display: flex;
