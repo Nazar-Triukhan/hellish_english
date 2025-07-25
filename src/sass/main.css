@@ -1017,11 +1017,6 @@ body {
     display: flex;
   }
 }
-@media screen and (min-width: 1336px) {
-  .teacher__flex {
-    width: 1336px;
-  }
-}
 .teacher__heading {
   color: #111518;
   font-size: 20px;
