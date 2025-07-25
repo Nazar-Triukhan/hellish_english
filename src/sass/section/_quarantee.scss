@@ -18,6 +18,10 @@ margin-bottom: 50px;
 
     &__background{
       background-color: $special-background;
+
+   @media screen and (min-width: 768px){
+    background-color: $team-background-color ;
+  }
     }
 
 &__list{
