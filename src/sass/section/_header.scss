@@ -13,6 +13,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (min-width: 768px) {
+       justify-content: flex-start;
+    }
     }
 
     &__svg{
@@ -67,6 +71,7 @@
         padding: 15px 5px 16px 5px;
         background-color: transparent;
         margin-left: 239px;
+        margin-right: 40px;
 
         @media screen and (min-width: 1336px) {
         margin-left: 59.92px;
@@ -79,8 +84,9 @@
     &__button{
         border: none;
         background-color: transparent;
+        padding: 0;
         width: 27px;
-        height: 19px;
+        height: 18px;
 
         @media screen and (min-width: 1336px) {
         display: none;
@@ -91,7 +97,6 @@
         width: 27px;
         height: 18px;
         fill: #000000;
-        
 
         @media screen and (min-width: 1336px) {
         display: none;
