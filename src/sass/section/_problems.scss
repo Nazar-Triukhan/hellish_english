@@ -2,13 +2,13 @@
         padding: 25px 0 365px 0 ;
         background-color: $primary-color;
         position: relative;
-          overflow: hidden;
         @media screen and (min-width: 768px){
   padding: 55px 0 192px 0;
 }
 
   @media screen and (min-width: 1336px){
     padding: 100px 0 280px 0;
+          overflow: hidden;
 
   }
   &__box{
@@ -65,23 +65,24 @@ width: 280px;
 .grammar{
     background-color: $team-background-color;
     padding: 20px 27px;
-    box-shadow: -5px 8px 26px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: -5px 8px 26px 0 rgba(0, 0, 0, 0.04);
     position: absolute;
     width: 280px;
-    top: 205px;
+    top: 1120px;
     left: 50%;
     transform: translateX(-50%);
     @media screen and (min-width: 768px){
   width: 688px;
   padding: 28px 90px;
-  top: 178px;
+  top: 870px;
 }
 
   @media screen and (min-width: 1336px){
     padding: 67px 113px;
     width: 1314px;
-    top: 348px;
+    top: 1500px;
   }
+
     &__list{
         display: flex;
         flex-direction: column;
@@ -112,6 +113,16 @@ font-size: 14px;
 font-weight: 700;
 line-height: 1.2;
 letter-spacing: 1.12px;
+display: flex;
+align-items: center;
+gap: 10px;
+&::before{
+    content: "";
+    width: 18px;
+    height: 2px;    
+    background-color: $max-text-color;
+    display: block;
+}
     }
 
     &__text{
