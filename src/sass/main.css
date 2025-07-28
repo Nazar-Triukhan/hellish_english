@@ -493,7 +493,6 @@ body {
   padding: 25px 0 365px 0;
   background-color: #111518;
   position: relative;
-  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .problems {
@@ -503,6 +502,7 @@ body {
 @media screen and (min-width: 1336px) {
   .problems {
     padding: 100px 0 280px 0;
+    overflow: hidden;
   }
 }
 .problems__box {
@@ -566,7 +566,7 @@ body {
   box-shadow: -5px 8px 26px 0 rgba(0, 0, 0, 0.04);
   position: absolute;
   width: 280px;
-  top: 205px;
+  top: 1120px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -574,14 +574,14 @@ body {
   .grammar {
     width: 688px;
     padding: 28px 90px;
-    top: 178px;
+    top: 870px;
   }
 }
 @media screen and (min-width: 1336px) {
   .grammar {
     padding: 67px 113px;
     width: 1314px;
-    top: 348px;
+    top: 1500px;
   }
 }
 .grammar__list {
@@ -617,6 +617,16 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 1.12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.grammar__number::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #FF6B09;
+  display: block;
 }
 .grammar__text {
   color: #111518;
