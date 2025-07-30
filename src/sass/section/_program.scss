@@ -277,9 +277,10 @@
   box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
   order: 6;
   @media screen and (min-width: 768px) {
-    padding: 40px 80px;
+    padding: 40px 98px;
     width: 718px;
     margin-top: -140px;
+
   }
   @media screen and (min-width: 1336px){
 width: 1314px;
@@ -294,10 +295,9 @@ margin-top: -190px;
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
+      gap: 20px;
+          justify-content: space-between;
     }
-        @media screen and (min-width: 1336px){
-    justify-content: space-between;
-  }
   }
 
   &__item {
