@@ -647,15 +647,18 @@ body {
 }
 
 .doit {
+  padding-top: 220px;
   padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .doit {
+    padding-top: 211px;
     padding-bottom: 70px;
   }
 }
 @media screen and (min-width: 1336px) {
   .doit {
+    padding-top: 280px;
     padding-bottom: 130px;
   }
 }
