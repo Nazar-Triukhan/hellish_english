@@ -1101,7 +1101,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .benefits {
-    padding: 40px 80px;
+    padding: 40px 98px;
     width: 718px;
     margin-top: -140px;
   }
@@ -1122,10 +1122,7 @@ body {
   .benefits__list {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1336px) {
-  .benefits__list {
+    gap: 20px;
     justify-content: space-between;
   }
 }
