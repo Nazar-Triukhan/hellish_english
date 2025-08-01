@@ -1691,8 +1691,10 @@ body {
   margin-right: auto;
 }
 
+.footer {
+  padding-top: 50px;
+}
 .footer__ilogo {
-  margin-top: 24px;
   width: 80px;
   height: 30px;
   display: block;
@@ -1700,11 +1702,58 @@ body {
   margin-right: auto;
   margin-bottom: 23px;
 }
-.footer__contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .footer__ilogo {
+    margin-left: 40px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .footer__ilogo {
+    margin-left: 183px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__adaptat {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .footer__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    display: flex;
+    align-items: center;
+    padding-right: 39px;
+    padding-left: 216px;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .footer__contact {
+    display: flex;
+    align-items: center;
+    padding-right: 39px;
+    padding-left: 290px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__connect {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    padding-right: 20px;
+    border-right: 1px solid #B9B9B9;
+    height: 40px;
+  }
 }
 .footer__phone {
   margin-left: 10px;
@@ -1720,12 +1769,23 @@ body {
   flex-shrink: 0;
   fill: #FF6B09;
 }
+@media screen and (min-width: 768px) {
+  .footer__iphone {
+    margin-right: 5px;
+    margin-left: auto;
+  }
+}
 .footer__igramm {
   width: 40px;
   height: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer__igramm {
+    margin-right: 39px;
+  }
 }
 .footer__bottom {
   width: 100%;
@@ -1741,5 +1801,19 @@ body {
   line-height: 28px; /* 200% */
   position: absolute;
   top: 20px;
-  left: 68px;
+}
+@media screen and (min-width: 320px) {
+  .footer__copyright {
+    left: 68px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    left: 40px;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .footer__copyright {
+    left: 183px;
+  }
 }/*# sourceMappingURL=main.css.map */
