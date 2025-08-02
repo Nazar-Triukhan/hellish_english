@@ -279,7 +279,6 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        width: 214px;
 
         @media screen and (min-width: 768px){
             flex-direction: row;
@@ -293,6 +292,10 @@
         
         @media screen and (min-width: 1336px){
             margin-right: 348px;
+
+            &:nth-child(3){
+                margin-right: 0;
+            }
         }
     }
 
@@ -304,11 +307,12 @@
         font-weight: 700;
         line-height: 1.6;
         letter-spacing: 1.12px;
-        
+        margin-left: 8px;
         left: 1px;
 
         @media screen and (min-width: 768px){
-            width: 143px;
+            width: 145px;
+            margin-left: 16px;
         }
 
         @media screen and (min-width: 1336px){
@@ -318,6 +322,19 @@
             position: absolute;
             top: 17px;
             left: 82px;
+            margin-left: 0;
+        }
+    }
+
+    &__modern{
+        display: none;
+
+        @media screen and (min-width: 768px){
+            display: flex;
+        }
+
+        @media screen and (min-width: 1336px){
+            display: none;
         }
     }
 

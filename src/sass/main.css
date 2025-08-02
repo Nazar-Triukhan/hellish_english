@@ -441,7 +441,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 214px;
 }
 @media screen and (min-width: 768px) {
   .hero__list {
@@ -457,6 +456,9 @@ body {
   .hero__item {
     margin-right: 348px;
   }
+  .hero__item:nth-child(3) {
+    margin-right: 0;
+  }
 }
 .hero__pluses {
   width: 146px;
@@ -466,11 +468,13 @@ body {
   font-weight: 700;
   line-height: 1.6;
   letter-spacing: 1.12px;
+  margin-left: 8px;
   left: 1px;
 }
 @media screen and (min-width: 768px) {
   .hero__pluses {
-    width: 143px;
+    width: 145px;
+    margin-left: 16px;
   }
 }
 @media screen and (min-width: 1336px) {
@@ -481,6 +485,20 @@ body {
     position: absolute;
     top: 17px;
     left: 82px;
+    margin-left: 0;
+  }
+}
+.hero__modern {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__modern {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .hero__modern {
+    display: none;
   }
 }
 @media screen and (min-width: 1336px) {
