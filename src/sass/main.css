@@ -1853,10 +1853,6 @@ body {
     top: -16px;
   }
 }
-.modal .is__hidden {
-  pointer-events: none;
-  opacity: 0;
-}
 .modal__logo {
   width: 80px;
   height: 30px;
@@ -1881,21 +1877,25 @@ body {
   }
 }
 .modal__close {
-  width: 14.496px;
-  height: 14.496px;
   border: none;
   background-color: transparent;
   padding: 0;
 }
-@media screen and (min-widtn: 768px) {
+@media screen and (min-width: 768px) {
   .modal__close {
-    margin-top: 16px;
+    margin-top: 18px;
+    margin-right: 31px;
   }
 }
 .modal__icon {
   width: 14.496px;
   height: 14.496px;
   fill: #FFF;
+}
+@media screen and (min-widtn: 768px) {
+  .modal__icon {
+    margin-top: 160px;
+  }
 }
 .modal__div {
   display: flex;
@@ -1956,4 +1956,9 @@ body {
   .modal__btn {
     display: none;
   }
+}
+
+.is__hidden {
+  pointer-events: none;
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

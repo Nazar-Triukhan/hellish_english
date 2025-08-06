@@ -17,11 +17,6 @@
         top: -16px;
     }
 
-    .is__hidden{
-        pointer-events: none;
-        opacity: 0;
-    }
-
     &__logo{
         width: 80px;
         height: 30px;
@@ -46,14 +41,13 @@
     }
 
     &__close{
-        width: 14.496px;
-        height: 14.496px;
         border: none;
         background-color: transparent;
         padding: 0;
-        
-        @media screen and (min-widtn: 768px){
-            margin-top: 16px;
+
+        @media screen and (min-width: 768px){
+            margin-top: 18px;
+            margin-right: 31px;
         }
     }
 
@@ -61,6 +55,10 @@
         width: 14.496px;
         height: 14.496px;
         fill: #FFF;
+
+        @media screen and (min-widtn: 768px){
+            margin-top: 160px;
+        }
     }
 
     &__div{
@@ -124,3 +122,8 @@
     }
     }
 }
+
+    .is__hidden{
+        pointer-events: none;
+        opacity: 0;
+    }
