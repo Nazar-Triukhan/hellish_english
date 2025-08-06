@@ -1834,4 +1834,126 @@ body {
   .footer__copyright {
     left: 183px;
   }
+}
+
+.modal {
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 21, 24, 0.9);
+  opacity: 1;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    padding-top: 58px;
+    top: -16px;
+  }
+}
+.modal .is__hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+.modal__logo {
+  width: 80px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+@media screen and (min-width) {
+  .modal__logo {
+    width: 128px;
+    height: 45px;
+  }
+}
+.modal__svg {
+  width: 80px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .modal__svg {
+    width: 128px;
+    height: 45px;
+  }
+}
+.modal__close {
+  width: 14.496px;
+  height: 14.496px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+@media screen and (min-widtn: 768px) {
+  .modal__close {
+    margin-top: 16px;
+  }
+}
+.modal__icon {
+  width: 14.496px;
+  height: 14.496px;
+  fill: #FFF;
+}
+.modal__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .modal__div {
+    padding-bottom: 72px;
+  }
+}
+.modal__list {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .modal__list {
+    padding-bottom: 0;
+    margin-left: 218px;
+  }
+}
+.modal__link {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.8;
+  letter-spacing: 0.6px;
+}
+.modal__link:hover {
+  color: #FF6B09;
+}
+@media screen and (min-width: 768px) {
+  .modal__link {
+    font-size: 26px;
+    line-height: 1.7;
+    letter-spacing: 0.78px;
+  }
+}
+.modal__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid #FF6B09;
+  color: #FF6B09;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .modal__btn {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
