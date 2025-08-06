@@ -1,0 +1,126 @@
+.modal{
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 21, 24, 0.90);
+    opacity: 1;
+    z-index: 1;
+    // padding-top: 48px;
+    // padding-left: 40px;
+    // padding-bottom: 48px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 58px;  
+        top: -16px;
+    }
+
+    .is__hidden{
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    &__logo{
+        width: 80px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+        @media screen and (min-width){
+            width: 128px;
+            height: 45px;
+        }
+    }
+
+    &__svg{
+        width: 80px;
+        height: 30px;
+
+        @media screen and (min-width: 768px){
+            width: 128px;
+            height: 45px;
+        }
+    }
+
+    &__close{
+        width: 14.496px;
+        height: 14.496px;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        
+        @media screen and (min-widtn: 768px){
+            margin-top: 16px;
+        }
+    }
+
+    &__icon{
+        width: 14.496px;
+        height: 14.496px;
+        fill: #FFF;
+    }
+
+    &__div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+
+        @media screen and (min-width: 768px){
+        padding-bottom: 72px;
+    }
+    }
+
+    &__list{
+        margin-bottom: 50px;
+
+        @media screen and (min-width: 768px){
+        padding-bottom: 0;
+        margin-left: 218px;
+    }
+    }
+
+    &__link{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 1.8;
+        letter-spacing: 0.6px;
+
+        &:hover{
+            color: #FF6B09;
+        }
+
+        @media screen and (min-width: 768px){
+            font-size: 26px;
+            line-height: 1.7;
+            letter-spacing: 0.78px;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        height: 48px;
+        background-color: transparent;
+        border: 2px solid #FF6B09;
+        color: #FF6B09;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 768px){
+        display: none;
+    }
+    }
+}
