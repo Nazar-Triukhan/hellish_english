@@ -12,7 +12,7 @@
     
 
     <script type="module" crossorigin src="/hellish_english/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/hellish_english/assets/index-4b145283.css">
+    <link rel="stylesheet" href="/hellish_english/assets/index-d33c37cc.css">
   </head>
   <body>
 
@@ -32,10 +32,11 @@
             </ul>
         </nav>
         <button type="button" class="header__consultation">consultation by phone</button>
-        <button type="button" class="header__button"><svg class="header__menu">
+        <button type="button" class="header__button" data-modal-open><svg class="header__menu">
             <use href="/hellish_english/assets/symbol-defs1-c09ca16f.svg#icon-menu"></use>
         </svg></button>
     </div>
+    
 </header>
     <section class="hero">
     <div class="container">
@@ -597,7 +598,25 @@ A consultant will contact you and answer your questions</p>
   </div>
 </footer>
 
-    
+    <section class="modal is__hidden" data-modal>
+    <div class="container">
+        <div class="modal__div">
+    <button type="button" class="modal__logo"><svg class="modal__svg">
+        <use href="../img/symbol-defs5.svg#icon-modal-logo"></use>
+    </svg></button>
+    <button type="button" class="modal__close" data-modal-close><svg class="modal__icon">
+        <use href="../img/symbol-defs.svg#icon-cross"></use>
+    </svg></button>
+        </div>
+    <ul class="modal__list">
+        <li class="modal__item"><a href="#" class="modal__link">Studying program</a></li>
+        <li class="modal__item"><a href="#" class="modal__link">About</a></li>
+        <li class="modal__item"><a href="#" class="modal__link">Training options</a></li>
+        <li class="modal__item"><a href="#" class="modal__link">Contacts</a></li>
+    </ul>
+    <button type="button" class="modal__btn">Consultation by phone</button>
+    </div>
+</section>
 
     
   </body>
