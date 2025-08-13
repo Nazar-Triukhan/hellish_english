@@ -1,56 +1,56 @@
 .footer {
     padding-top: 50px;
-&__ilogo {
+
+    &__whitebg {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    }
+
+    &__ilogo {
         width: 80px;
         height: 30px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 23px;
-
-        @media screen and (min-width: 768px) {
-            margin-left: 40px;
-            display: flex;
-        }
-
-        @media screen and (min-width: 1336px) {
-            margin-left: 183px;
-        }
     }
  
     &__adaptat {
 
         @media screen and (min-width: 768px) {
             display: flex;
-            margin-top: auto;
+            align-items: center;
             margin-bottom: 40px;
         }
     }
 
     &__contact {
         @media screen and (min-width: 320px) {
-            display: flex;
+            
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px; 
+           
         }
 
         @media screen and (min-width: 768px) {
             display: flex;
             align-items: center;
-            padding-right: 39px;
-            padding-left: 216px;
         }
 
         @media screen and (min-width: 1336px) {
             display: flex;
             align-items: center;
-            padding-right: 39px;
-            padding-left: 290px;
         }
     }
 
     &__connect {
+        
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 23px;
+        margin-bottom: 30px;
+
         @media screen and (min-width: 768px) {
             margin-left: auto;
             display: flex;
@@ -90,18 +90,16 @@
         margin-left: auto;
         margin-right: auto;
         
-        @media screen and (min-width: 768px) {
-            margin-right: 39px;
-        }
+       
     }
 
-    &__bottom {
+    &__blackbg {
         width: 100%;
         height: 68px;
         background-color: $primary-color;
         position: relative;
-        margin-top: 30px;
     }
+    
     
     &__copyright {
         color: $mini-text-color;
