@@ -100,6 +100,9 @@ body {
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__message:hover {
   color: #FF6B09;
@@ -1922,6 +1925,9 @@ body {
   font-weight: 800;
   line-height: 1.8;
   letter-spacing: 0.6px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__link:hover {
   color: #FF6B09;

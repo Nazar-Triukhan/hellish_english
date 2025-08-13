@@ -88,6 +88,9 @@
         font-weight: 800;
         line-height: 1.8;
         letter-spacing: 0.6px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover{
             color: #FF6B09;
