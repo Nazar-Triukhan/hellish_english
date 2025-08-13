@@ -1457,6 +1457,13 @@ body {
   padding-top: 70px;
   padding-bottom: 61px;
 }
+@media screen and (min-width: 320px) {
+  .fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .fb__title {
   color: #111518;
   text-align: center;
@@ -1542,6 +1549,13 @@ body {
           text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
+}
+@media screen and (min-width: 320px) {
+  .fb__readmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .fb__work-images {
   width: 54px;
