@@ -1,4 +1,13 @@
 .fb{
+        padding-top: 70px;
+        padding-bottom: 61px;
+
+        @media screen and (min-width: 320px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         &__title  {
             color: $primary-color;
             text-align: center;
@@ -47,6 +56,18 @@
             width: 240px;
         }
 
+        &__arrows {
+            display: flex;
+            align-items: center;
+            margin-top: 52px;
+        }
+        
+        &__list {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
         &__arow {
             stroke-width: 2px;
             fill: $max-text-color;
@@ -54,6 +75,7 @@
             height: 10px;
             width: 25px;
             height: 15px;
+            margin-right: 24px;
         }
 
         &__aroww {
@@ -64,13 +86,13 @@
             height: 10px;
             width: 25px;
             height: 15px;
+            margin-left: 24px;
         }
 
         &__readmore {
             color: #FF6B09;
             font-family: "Montserrat";
             font-size: 12px;
-            font-style: normal;
             font-weight: 500;
             line-height: 20px;
             text-decoration-line: underline;
@@ -78,7 +100,16 @@
             text-decoration-skip-ink: none;
             text-decoration-thickness: auto;
             text-underline-offset: auto;
+
+            @media screen and (min-width: 320px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         }
         
-        // &__
+        &__work-images {
+            width: 54px;
+            height: 54px;
+        }
 }

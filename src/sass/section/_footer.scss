@@ -1,56 +1,59 @@
 .footer {
-    padding-top: 50px;
-&__ilogo {
+
+    &__whitebg {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    }
+    
+    &__logo {
+        margin-bottom: 22px;
+
+         @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__ilogo {
         width: 80px;
         height: 30px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 23px;
-
-        @media screen and (min-width: 768px) {
-            margin-left: 40px;
-            display: flex;
-        }
-
-        @media screen and (min-width: 1336px) {
-            margin-left: 183px;
-        }
     }
  
     &__adaptat {
-
         @media screen and (min-width: 768px) {
             display: flex;
-            margin-top: auto;
-            margin-bottom: 40px;
+            align-items: center;
         }
     }
 
     &__contact {
-        @media screen and (min-width: 320px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px; 
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
 
         @media screen and (min-width: 768px) {
             display: flex;
             align-items: center;
-            padding-right: 39px;
-            padding-left: 216px;
+            margin-left: auto;
+            flex-direction: row;
+            gap: 0px;
         }
 
         @media screen and (min-width: 1336px) {
             display: flex;
             align-items: center;
-            padding-right: 39px;
-            padding-left: 290px;
+            margin-left: 390px;
         }
     }
 
     &__connect {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
         @media screen and (min-width: 768px) {
             margin-left: auto;
             display: flex;
@@ -64,7 +67,6 @@
 
     &__phone {
         margin-left: 10px;
-        width: 169px;
         color: $primary-color;
         font-size: 14px;
         font-weight: 600;
@@ -90,37 +92,37 @@
         margin-left: auto;
         margin-right: auto;
         
-        @media screen and (min-width: 768px) {
-            margin-right: 39px;
-        }
+       
     }
 
-    &__bottom {
-        width: 100%;
-        height: 68px;
+    &__blackbg {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
         background-color: $primary-color;
-        position: relative;
-        margin-top: 30px;
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
     }
+    
     
     &__copyright {
         color: $mini-text-color;
         font-size: 14px;
         font-weight: 500;
         line-height: 28px; /* 200% */
-        position: absolute;
-        top: 20px;
         
         @media screen and (min-width: 320px) {
-            left: 68px;
+       
         }
 
         @media screen and (min-width: 768px) {
-            left: 40px;
+           
         }
 
         @media screen and (min-width: 1336px) {
-            left: 183px;
+          
         }
     }
 }
