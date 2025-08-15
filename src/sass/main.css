@@ -1646,7 +1646,7 @@ body {
   text-align: center;
   font-size: 12px;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 0.96px;
   width: 280px;
   margin-bottom: 43px;
@@ -1696,7 +1696,7 @@ body {
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 1.12px;
   padding: 15px 0 16px 28px;
   width: 100%;
@@ -1731,7 +1731,7 @@ body {
   }
 }
 .registration__btn {
-  color: #fff;
+  color: #FFF;
   background-color: #FF6B09;
   text-align: center;
   font-size: 12px;
