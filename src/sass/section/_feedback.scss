@@ -19,6 +19,37 @@
             letter-spacing: 0.6px;
             width: 280px;
             height: 52px;
+
+            @media screen and (min-width: 320px) {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        }
+
+        &__avatanya {
+            width: 90px;
+            height: 90px;
+
+            @media screen and (min-width: 320px) {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 25px;
+            margin-bottom: 18px;
+        }
+        }
+
+        &__facebook {
+            width: 34px;
+            height: 33.993px;
+            
+            @media screen and (min-width: 320px) {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 22px;
+        }
         }
 
         &__name {
@@ -31,6 +62,12 @@
             line-height: normal;
             letter-spacing: 1.12px;
             width: 225px;
+
+            @media screen and (min-width: 320px) {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+        }
         }
 
         &__details {
@@ -43,6 +80,13 @@
             line-height: normal;
             letter-spacing: 0.96px;
             width: 240px;
+            margin-top: 20px;
+
+            @media screen and (min-width: 320px) {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+        }
         }
 
         &__feedback {
@@ -54,12 +98,25 @@
             font-weight: 500;
             line-height: 20px; /* 166.667% */
             width: 240px;
+            margin-top: 16px;
+         
+            @media screen and (min-width: 320px) {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+        }
         }
 
         &__arrows {
             display: flex;
             align-items: center;
             margin-top: 52px;
+
+            @media screen and (min-width: 320px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         }
         
         &__list {
