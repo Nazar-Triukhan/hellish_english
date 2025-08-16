@@ -54,7 +54,7 @@
     &__icon{
         width: 14.496px;
         height: 14.496px;
-        fill: #FFF;
+        fill: $team-background-color;
 
         @media screen and (min-widtn: 768px){
             margin-top: 160px;
@@ -82,8 +82,7 @@
     }
 
     &__link{
-        color: #FFF;
-        font-family: Montserrat;
+        color: $team-background-color;
         font-size: 20px;
         font-weight: 800;
         line-height: 1.8;
@@ -93,7 +92,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover{
-            color: #FF6B09;
+            color: $max-text-color;
         }
 
         @media screen and (min-width: 768px){
@@ -112,8 +111,7 @@
         height: 48px;
         background-color: transparent;
         border: 2px solid #FF6B09;
-        color: #FF6B09;
-        font-family: Montserrat;
+        color: $max-text-color;
         font-size: 12px;
         font-weight: 700;
         line-height: 1.25;

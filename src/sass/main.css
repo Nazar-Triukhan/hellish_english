@@ -95,7 +95,6 @@ body {
 .header__message {
   color: #B9B9B9;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
@@ -116,7 +115,6 @@ body {
     justify-content: center;
     align-items: center;
     color: #FF6B09;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
@@ -152,7 +150,6 @@ body {
 .header__menu {
   width: 27px;
   height: 18px;
-  fill: #000000;
 }
 @media screen and (min-width: 1336px) {
   .header__menu {
@@ -258,7 +255,6 @@ body {
   width: 280px;
   height: 53px;
   color: #111518;
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: 800;
   line-height: 1.3;
@@ -284,7 +280,6 @@ body {
 .hero__text {
   width: 280px;
   color: #B9B9B9;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
@@ -305,7 +300,6 @@ body {
 .hero__desk {
   width: 280px;
   color: #111518;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
@@ -324,7 +318,6 @@ body {
 .hero__deskription {
   width: 280px;
   color: #FF6B09;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.65;
@@ -351,7 +344,6 @@ body {
     flex-direction: column;
     width: 530px;
     color: #111518;
-    font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.65;
@@ -398,7 +390,6 @@ body {
 }
 .hero__link {
   color: #FFF;
-  font-family: Montserrat;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.25;
@@ -466,7 +457,6 @@ body {
 .hero__pluses {
   width: 146px;
   color: #111518;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.6;
@@ -1476,6 +1466,38 @@ body {
   width: 280px;
   height: 52px;
 }
+@media screen and (min-width: 320px) {
+  .fb__title {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.fb__avatanya {
+  width: 90px;
+  height: 90px;
+}
+@media screen and (min-width: 320px) {
+  .fb__avatanya {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 18px;
+  }
+}
+.fb__facebook {
+  width: 34px;
+  height: 33.993px;
+}
+@media screen and (min-width: 320px) {
+  .fb__facebook {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 22px;
+  }
+}
 .fb__name {
   color: #FF6B09;
   text-align: center;
@@ -1487,6 +1509,13 @@ body {
   letter-spacing: 1.12px;
   width: 225px;
 }
+@media screen and (min-width: 320px) {
+  .fb__name {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .fb__details {
   color: #B9B9B9;
   text-align: center;
@@ -1497,6 +1526,14 @@ body {
   line-height: normal;
   letter-spacing: 0.96px;
   width: 240px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 320px) {
+  .fb__details {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .fb__feedback {
   color: #3D3D3D;
@@ -1507,11 +1544,26 @@ body {
   font-weight: 500;
   line-height: 20px; /* 166.667% */
   width: 240px;
+  margin-top: 16px;
+}
+@media screen and (min-width: 320px) {
+  .fb__feedback {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .fb__arrows {
   display: flex;
   align-items: center;
   margin-top: 52px;
+}
+@media screen and (min-width: 320px) {
+  .fb__arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .fb__list {
   display: flex;
@@ -1934,7 +1986,6 @@ body {
 }
 .modal__link {
   color: #FFF;
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: 800;
   line-height: 1.8;
@@ -1963,7 +2014,6 @@ body {
   background-color: transparent;
   border: 2px solid #FF6B09;
   color: #FF6B09;
-  font-family: Montserrat;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.25;
