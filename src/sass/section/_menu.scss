@@ -8,9 +8,9 @@
     background: rgba(17, 21, 24, 0.90);
     opacity: 1;
     z-index: 1;
-    // padding-top: 48px;
-    // padding-left: 40px;
-    // padding-bottom: 48px;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px){
         padding-top: 58px;  
