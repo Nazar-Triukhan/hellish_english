@@ -73,6 +73,15 @@
         background-color: transparent;
         margin-left: 239px;
         margin-right: 40px;
+        transition-property: background-color, border-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover{
+            color: $team-background-color;
+            border-color: $team-background-color;
+            background-color: $max-text-color;
+        }
 
         @media screen and (min-width: 1336px) {
         margin-left: 59.92px;

@@ -125,6 +125,14 @@ body {
     background-color: transparent;
     margin-left: 239px;
     margin-right: 40px;
+    transition-property: background-color, border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__consultation:hover {
+    color: #FFF;
+    border-color: #FFF;
+    background-color: #FF6B09;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1336px) {
@@ -357,6 +365,20 @@ body {
   background: #FF6B09;
   border: none;
   margin-bottom: 54px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__btn:hover {
+  background-color: #FFF;
+  border: 2px solid #FF6B09;
+  color: #FF6B09;
 }
 @media screen and (min-width: 768px) {
   .hero__btn {
@@ -368,6 +390,9 @@ body {
     margin-bottom: 373px;
     width: 354px;
     height: 70px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 1.96px;
   }
 }
 .hero__img {
@@ -386,21 +411,6 @@ body {
   .hero__img {
     width: 842px;
     height: 600px;
-  }
-}
-.hero__link {
-  color: #FFF;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.96px;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 1336px) {
-  .hero__link {
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 1.96px;
   }
 }
 @media screen and (min-width: 1336px) {
@@ -1913,6 +1923,9 @@ body {
   background: rgba(17, 21, 24, 0.9);
   opacity: 1;
   z-index: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .modal {
