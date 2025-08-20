@@ -1464,23 +1464,43 @@ body {
     align-items: center;
   }
 }
+.fb__box {
+  position: relative;
+}
 .fb__title {
   color: #111518;
   text-align: center;
-  font-family: "Montserrat";
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
   line-height: 130%;
   letter-spacing: 0.6px;
   width: 280px;
-  height: 52px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
   .fb__title {
+    font-size: 26px;
+    width: 688px;
+    height: 32px;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .fb__title {
+    width: 866px;
+    height: 57px;
+    letter-spacing: 1.38px;
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fb__card {
+    box-shadow: -5px 8px 26px 0 rgba(0, 0, 0, 0.04);
+    padding: 40px;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    gap: 46px;
   }
 }
 .fb__avatanya {
@@ -1496,6 +1516,12 @@ body {
     margin-bottom: 18px;
   }
 }
+@media screen and (min-width: 768px) {
+  .fb__avatanya {
+    width: 150px;
+    height: 150px;
+  }
+}
 .fb__facebook {
   width: 34px;
   height: 33.993px;
@@ -1506,6 +1532,12 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fb__facebook {
+    width: 34px;
+    height: 34px;
   }
 }
 .fb__name {
@@ -1524,6 +1556,16 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fb__name {
+    width: 356px;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 .fb__details {
@@ -1545,6 +1587,12 @@ body {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .fb__details {
+    width: 412px;
+    text-align: start;
+  }
+}
 .fb__feedback {
   color: #3D3D3D;
   text-align: center;
@@ -1561,6 +1609,12 @@ body {
     display: flex;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fb__feedback {
+    width: 412px;
+    text-align: start;
   }
 }
 .fb__arrows {
@@ -1580,6 +1634,21 @@ body {
   flex-direction: row;
   gap: 10px;
 }
+@media screen and (min-width: 768px) {
+  .fb__list {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .fb__element:nth-child(n+4) {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fb__element:nth-child(n+4) {
+    display: block;
+  }
+}
 .fb__arow {
   stroke-width: 2px;
   fill: #FF6B09;
@@ -1588,6 +1657,13 @@ body {
   width: 25px;
   height: 15px;
   margin-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  .fb__arow {
+    position: absolute;
+    top: 176px;
+    left: 12px;
+  }
 }
 .fb__aroww {
   transform: rotate(180deg);
@@ -1598,6 +1674,13 @@ body {
   width: 25px;
   height: 15px;
   margin-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .fb__aroww {
+    position: absolute;
+    top: 176px;
+    right: 12px;
+  }
 }
 .fb__readmore {
   color: #FF6B09;
@@ -1617,6 +1700,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fb__readmore {
+    width: 412px;
+    justify-content: start;
   }
 }
 .fb__work-images {
@@ -1923,8 +2012,9 @@ body {
   background: rgba(17, 21, 24, 0.9);
   opacity: 1;
   z-index: 1;
-  transition-property: opacity;
-  transition-duration: 250ms;
+  transform: scale(1);
+  transition-property: opacity, transform;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -2042,4 +2132,8 @@ body {
 .is__hidden {
   pointer-events: none;
   opacity: 0;
+}
+
+.is__hidden.modal {
+  transform: scale(0);
 }/*# sourceMappingURL=main.css.map */
