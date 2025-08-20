@@ -8,8 +8,9 @@
     background: rgba(17, 21, 24, 0.90);
     opacity: 1;
     z-index: 1;
-    transition-property: opacity;
-    transition-duration: 250ms;
+    transform: scale(1);
+    transition-property: opacity, transform;
+    transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px){
@@ -127,4 +128,8 @@
     .is__hidden{
         pointer-events: none;
         opacity: 0;
+    }
+
+    .is__hidden.modal{
+        transform: scale(0);
     }
