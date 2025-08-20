@@ -1,6 +1,7 @@
 .fb{
         padding-top: 70px;
         padding-bottom: 61px;
+        
 
         @media screen and (min-width: 320px) {
             display: flex;
@@ -8,23 +9,45 @@
             align-items: center;
         }
 
+        &__box {
+            position: relative;
+        }
+
         &__title  {
             color: $primary-color;
             text-align: center;
-            font-family: "Montserrat";
             font-size: 20px;
             font-style: normal;
             font-weight: 800;
             line-height: 130%;
             letter-spacing: 0.6px;
             width: 280px;
-            height: 52px;
-
-            @media screen and (min-width: 320px) {
-            display: flex;
+            display: block;
             margin-right: auto;
             margin-left: auto;
+
+            @media screen and (min-width: 768px) {
+                font-size: 26px;
+                width: 688px;
+                height: 32px;
+            }
+
+            @media screen and (min-width: 1336px) {
+                width: 866px;
+                height: 57px;
+                letter-spacing: 1.38px;
+                font-size: 46px;
+            }
         }
+
+        &__card { 
+            @media screen and (min-width: 768px){
+                box-shadow: -5px 8px 26px 0 rgba(0, 0, 0, 0.04);
+                padding: 40px;
+
+                display: flex;
+                gap: 46px;
+            }
         }
 
         &__avatanya {
@@ -37,7 +60,13 @@
             margin-left: auto;
             margin-top: 25px;
             margin-bottom: 18px;
-        }
+            }
+
+            @media screen and (min-width: 768px) {
+                width: 150px;
+                height: 150px;
+
+            }
         }
 
         &__facebook {
@@ -50,6 +79,12 @@
                 margin-left: auto;
                 margin-bottom: 22px;
         }
+
+            @media screen and (min-width: 768px){
+                width: 34px;
+                height: 34px;
+            }
+
         }
 
         &__name {
@@ -68,6 +103,15 @@
                 margin-right: auto;
                 margin-left: auto;
         }
+
+        @media screen and (min-width: 768px){
+                width: 356px;
+                font-size: 20px;
+                display: flex;
+                justify-content: start;
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
 
         &__details {
@@ -87,6 +131,12 @@
             margin-right: auto;
             margin-left: auto;
         }
+
+        @media screen and (min-width: 768px){
+            width: 412px;
+            text-align: start;
+        }
+        
         }
 
         &__feedback {
@@ -104,6 +154,11 @@
             display: flex;
             margin-right: auto;
             margin-left: auto;
+        }
+
+        @media screen and (min-width: 768px){
+            width: 412px;
+            text-align: start;
         }
         }
 
@@ -123,6 +178,20 @@
             display: flex;
             flex-direction: row;
             gap: 10px;
+
+            @media screen and (min-width: 768px){
+                gap: 30px;
+            }
+        }
+
+        &__element:nth-child(n+4) {
+            @media screen and (min-width: 320px) {
+                display: none;
+            }
+
+        @media screen and (min-width: 768px){
+                display: block;
+            }
         }
 
         &__arow {
@@ -133,6 +202,12 @@
             width: 25px;
             height: 15px;
             margin-right: 24px;
+            
+            @media screen and (min-width: 768px){
+                position: absolute;
+                top: 176px;
+                left: 12px;
+            }
         }
 
         &__aroww {
@@ -144,6 +219,12 @@
             width: 25px;
             height: 15px;
             margin-left: 24px;
+
+            @media screen and (min-width: 768px){
+                position: absolute;
+                top: 176px;
+                right: 12px;
+            }
         }
 
         &__readmore {
@@ -159,9 +240,14 @@
             text-underline-offset: auto;
 
             @media screen and (min-width: 320px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+ 
+            @media screen and (min-width: 768px){
+                width: 412px;
+                justify-content: start;
         }
         }
         
